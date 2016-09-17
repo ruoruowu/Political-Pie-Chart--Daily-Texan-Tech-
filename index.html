@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ChartJS - Pie Chart</title>
+		<script src="jquery-3.1.0.min.js"></script>
+		<script src="Chart.js"></script>
+	</head>
+	<body>
+		<canvas id="mycanvas" width="300" height="300">
+		<script>
+			$(document).ready(function(){
+				var ctx = $("#mycanvas").get(0).getContext("2d");
+				//pie chart data
+				//sum of values = 100
+				var data = [
+					{
+						value: 15.38,
+						color: "PaleTurquoise",
+						highlight: "MediumSpringGreen",
+						label: "Supporting Hilary Clinton"
+					},
+                    {
+						value: 7.69,
+						color: "MediumTurquoise",
+						highlight: "MediumSpringGreen",
+						label: "Supporting Donald Trump"
+					},	
+                    {
+						value: 7.69,
+						color: "LightSkyBlue",
+						highlight: "MediumSpringGreen",
+						label: "Supporting Gary Johnson"
+					},	
+                    {
+						value: 15.38,
+						color: "CadetBlue",
+						highlight: "MediumSpringGreen",
+						label: "Supporting Jill Stein"
+					},
+					{
+						value: 23.08,
+						color: "DeepSkyBlue",
+						highlight: "MediumSpringGreen",
+						label: "Can't Publicly Endorse"
+					},                   
+                    {
+						value: 23.08,
+						color: "DodgerBlue",
+						highlight: "MediumSpringGreen",
+						label: "Hasn't Announced"
+					},
+					{
+						value: 7.69,
+						color: "Aqua",
+						highlight: "MediumSpringGreen",
+						label: "Won't Support Anyone"
+					}
+
+				];
+				//draw
+				var piechart = new Chart(ctx).Pie(data);
+			});
+		</script>
+	</body>
+</html>
