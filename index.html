@@ -5,8 +5,11 @@
 		<script src="jquery-3.1.0.min.js"></script>
 		<script src="Chart.js"></script>
 	</head>
-	<body>
-		<canvas id="mycanvas" width="300" height="300">
+	<body>    
+		<canvas id="mycanvas" width=500%, height=500%>
+            .fit {
+  max-width: 200%;
+  max-height: 100%;}
 		<script>
 			$(document).ready(function(){
 				var ctx = $("#mycanvas").get(0).getContext("2d");
@@ -15,44 +18,44 @@
 				var data = [
 					{
 						value: 15.38,
-						color: "PaleTurquoise",
-						highlight: "MediumSpringGreen",
+						color: "blue",
+						highlight: "slateblue",
 						label: "Supporting Hilary Clinton"
 					},
                     {
 						value: 7.69,
-						color: "MediumTurquoise",
-						highlight: "MediumSpringGreen",
+						color: "red",
+						highlight: "indianred",
 						label: "Supporting Donald Trump"
 					},	
                     {
 						value: 7.69,
-						color: "LightSkyBlue",
-						highlight: "MediumSpringGreen",
+						color: "orchid",
+						highlight: "mediumpurple",
 						label: "Supporting Gary Johnson"
 					},	
                     {
 						value: 15.38,
-						color: "CadetBlue",
-						highlight: "MediumSpringGreen",
+						color: "yellowgreen",
+						highlight: "olivedrab",
 						label: "Supporting Jill Stein"
 					},
 					{
 						value: 23.08,
-						color: "DeepSkyBlue",
-						highlight: "MediumSpringGreen",
+						color: "gold",
+						highlight: "khaki",
 						label: "Can't Publicly Endorse"
 					},                   
                     {
 						value: 23.08,
-						color: "DodgerBlue",
-						highlight: "MediumSpringGreen",
+						color: "darkgray",
+						highlight: "darkslategray",
 						label: "Hasn't Announced"
 					},
 					{
 						value: 7.69,
-						color: "Aqua",
-						highlight: "MediumSpringGreen",
+						color: "gainsboro",
+						highlight: "lightslategray",
 						label: "Won't Support Anyone"
 					}
 
